@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Basic Registration Form</title>
+	<meta charset="utf-8">
+	<title>Avestan Technologies - Job Portal</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+
+
+
+	<!-- -->
+	<!-- JQUERY CDN    if doesn't worked bootstrap 2 jquery cnd at bottom then use this CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- FONT AWESOME CDN -->
+	<script src="https://kit.fontawesome.com/9ccd7bd56c.js" crossorigin="anonymous"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CDN FOR SWEET ALERT  -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- DATA TABLE JAVA SCRIPT 3 CDN LINK for head  -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+	<!-- DATA TABLE 2 CSS LINKS for head -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+
+	<style>
+		h4 {
+			text-align: center;
+			border: 1px solid;
+			color: white;
+			padding: 10px;
+			background-color: #02561a;
+		}
+
+		.form-control:focus {
+			border-color: green;
+			box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+		}
+	</style>
+</head>
+
+<body>
+	<br>
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-1 col-md-6 col-sm-8 col-xs-12"></div>
+
+			<div class="col-lg-10 col-md-6 col-sm-8 col-xs-12">
+
+
+				<div class="card">
+					<div class="card-body">
+						<div class="container" data-aos="fade-up">
+							<form class="c-form">
+								<!-- General Information -->
+								<div class="box">
+									<div class="box-header">
+										<h4 class="container-fluid mb-5 wow fadeIn">Personal
+											Information</h4>
+									</div>
+									<div class="box-body">
+										<div class="row">
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Full Name</label> <input type="text" class="form-control"
+													placeholder="Full Name" name="full_name"><br>
+											</div><br><br>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Applying For</label> <input type="text" class="form-control"
+													placeholder="Applying For" name="Applying_For">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Category</label> <select class="wide form-control">
+													<option data-display="Location" value="IT">IT</option>
+													<option value="hr">HR</option>
+												</select>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Contact No.</label> <input type="text" class="form-control"
+													placeholder="Contact No." name="Contact_No.">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Experience</label> <select class="wide form-control">
+													<option data-display="Experience" value="0">0 To 6 Month</option>
+													<option value="1">1 Year</option>
+													<option value="2">2 Years</option>
+													<option value="3">3 Years</option>
+													<option value="4">4 Years</option>
+													<option value="5">5 Years</option>
+													<option value="6">6 Years</option>
+													<option value="7">7 Years</option>
+													<option value="8">8 Years</option>
+													<option value="9">9 Years</option>
+													<option value="10">10 Years</option>
+													<option value="11">10+ Years</option>
+												</select><br>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Your CV</label>
+												<div class="custom-file-upload">
+													<input type="file" id="file" name="myfiles[]" multiple />
+												</div>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Job Type</label> <select class="wide form-control">
+													<option data-display="Job Type" value="0">Full Time</option>
+													<option value="1">Part Time</option>
+													<option value="2">Freelancer</option>
+												</select>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-12 m-clear">
+												<label>Highest Qualifications</label> <input type="text"
+													class="form-control" placeholder="Highest Qualification"
+													name="qualification"><br>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-12 m-clear">
+												<label>Current City</label> <input type="text" class="form-control"
+													placeholder="Current City" name="city">
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<label>Relevant Skills (Seperated with Comma)</label> <input type="text"
+													class="form-control" placeholder="Relevant Skills" name="skills">
+											</div>
+										</div>
+									</div>
+								</div><br><br>
+
+								<!-- Company Address -->
+								<div class="box">
+									<div class="box-header">
+
+										<h4 class="container-fluid mb-5 wow fadeIn">Company
+											Address</h4>
+									</div>
+									<div class="box-body">
+										<div class="row">
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Email</label> <input type="email" class="form-control"
+													placeholder="Email" name="email"><br>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Phone Number</label> <input type="text" class="form-control"
+													placeholder="Phone Number" name="phone_no">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Website Link</label> <input type="text" class="form-control"
+													placeholder="Website Link" name="Website_link">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Address</label> <input type="text" class="form-control"
+													placeholder="Address" name="address"><br>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>City</label> <select class="wide form-control">
+													<option data-display="State">select</option>
+													<option value="1">Amravati</option>
+													<option value="2">Itanagar</option>
+													<option value="3">Dispur</option>
+													<option value="4">Patna</option>
+													<option value="5">Raipur</option>
+													<option value="6">Panaji</option>
+													<option value="7">Gandhinagar</option>
+													<option value="8">Chandigarh</option>
+													<option value="9">Shimla</option>
+													<option value="10">Ranchi</option>
+												</select>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>State</label> <select class="wide form-control">
+													<option data-display="State">Select</option>
+													<option value="1">Andhra Pradesh</option>
+													<option value="2">Arunachal Pradesh</option>
+													<option value="3">Assam</option>
+													<option value="4">Bihar</option>
+													<option value="5">Chhattisgarh</option>
+													<option value="6">Chhattisgarh</option>
+													<option value="7">Gujarat</option>
+													<option value="8">Haryana</option>
+													<option value="9">Himachal Pradesh </option>
+													<option value="10">Jharkhand</option>
+												</select>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Country</label> <select class="wide form-control">
+													<option data-display="State">Afghanistan</option>
+													<option value="1">Albania</option>
+													<option value="2">Algeria</option>
+													<option value="3">Brazil</option>
+													<option value="4">Burundi</option>
+													<option value="5">Bulgaria</option>
+													<option value="6">Germany</option>
+													<option value="7">Grenada</option>
+													<option value="8">Guatemala</option>
+													<option value="9" disabled>Iceland</option>
+												</select>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+												<label>Zip Code</label> <input type="text" class="form-control"
+													placeholder="Zip Code" name="zip_code">
+											</div>
+										</div>
+									</div>
+								</div><br><br>
+
+								<!-- Social Accounts -->
+								<div class="box">
+									<div class="box-header">
+										<h4 class="container-fluid mb-5 wow fadeIn">Social
+											Accounts</h4>
+
+									</div>
+									<div class="box-body">
+										<div class="row">
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Facebook</label> <input type="text" class="form-control"
+													placeholder="https://www.facebook.com" name="facebook"><br>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Google +</label> <input type="text" class="form-control"
+													placeholder="https://www.gmail.com" name="Google">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Twitter</label> <input type="text" class="form-control"
+													placeholder="https://twitter.com" name="twitter">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>LinkedIn</label> <input type="text" class="form-control"
+													placeholder="https://www.linkedin.com" name="LinkedIn">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Pinterest</label> <input type="text" class="form-control"
+													placeholder="https://www.pinterest.com" name="pinterest">
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12">
+												<label>Instagram</label> <input type="text" class="form-control"
+													placeholder="http://instagram.com" name="instagram">
+											</div>
+										</div>
+									</div>
+								</div><br><br>
+								<div class="text-center">
+									<button type="submit" class="btn"
+										style="color: white;background-color: #02561a;">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-lg-1 col-md-6 col-sm-8 col-xs-12"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
